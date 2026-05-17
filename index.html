@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="pt-BR">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contagem Regressiva</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <meta name="description" content="Contagem regressiva até um evento">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+  <meta property="og:image:alt" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <div class="d-flex flex-column min-vh-100">
+
+    <div class="d-flex flex-column flex-grow-1">
+      <main class="flex-grow-1 p-3 d-flex flex-column justify-content-center">
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-12 col-lg-8">
+
+              <div class="p-5 mb-4 bg-body-tertiary rounded-3 text-center">
+                <h1 class="display-5 fw-bold">
+                  Contagem Regressiva
+                </h1>
+                <p class="fs-4 mb-0">
+                  Esta aplicação recupera de um Web Service a data de um evento, e então exibe uma contagem regressiva.
+                </p>
+              </div>
+
+              <div class="row g-0 border text-center" id="contagem-regressiva" aria-live="polite">
+                <div class="col-6 col-md-3 border-end">
+                  <p class="bg-dark text-white display-4 mb-0 py-4" id="dias">0</p>
+                  <p class="bg-white text-dark mb-0 py-2 border-top">dias</p>
+                </div>
+                <div class="col-6 col-md-3 border-end">
+                  <p class="bg-dark text-white display-4 mb-0 py-4" id="horas">0</p>
+                  <p class="bg-white text-dark mb-0 py-2 border-top">horas</p>
+                </div>
+                <div class="col-6 col-md-3 border-end">
+                  <p class="bg-dark text-white display-4 mb-0 py-4" id="minutos">0</p>
+                  <p class="bg-white text-dark mb-0 py-2 border-top">minutos</p>
+                </div>
+                <div class="col-6 col-md-3">
+                  <p class="bg-dark text-white display-4 mb-0 py-4" id="segundos">0</p>
+                  <p class="bg-white text-dark mb-0 py-2 border-top">segundos</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+      </main>
+    </div>
+
+    <footer class="text-center p-2 bg-secondary bg-opacity-50 fst-italic text-black text-opacity-50">
+      Copyright © 2021 Rui Pimentel Leite
+    </footer>
+
+  </div>
+
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
